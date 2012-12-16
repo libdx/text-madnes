@@ -65,7 +65,6 @@
 		E1E17E0E167CA84E008915E7 = {
 			isa = PBXGroup;
 			children = (
-				E1E17E47167CC803008915E7 /* QuartzCore.framework */,
 				E1E17E23167CA84E008915E7 /* text-madnes */,
 				E1E17E1C167CA84E008915E7 /* Frameworks */,
 				E1E17E1A167CA84E008915E7 /* Products */,
@@ -83,6 +82,7 @@
 		E1E17E1C167CA84E008915E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E1E17E47167CC803008915E7 /* QuartzCore.framework */,
 				E1E17E1D167CA84E008915E7 /* UIKit.framework */,
 				E1E17E1F167CA84E008915E7 /* Foundation.framework */,
 				E1E17E21167CA84E008915E7 /* CoreGraphics.framework */,
@@ -308,6 +308,7 @@
 				E1E17E3F167CA84E008915E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

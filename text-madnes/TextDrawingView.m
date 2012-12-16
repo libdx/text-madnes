@@ -37,7 +37,7 @@
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
 {
     UIGraphicsPushContext(ctx);
-    [_text drawAtPoint:CGPointMake(8,0) forWidth:kTextViewMaxWidth withFont:_font lineBreakMode:NSLineBreakByTruncatingTail];
+    [_text drawAtPoint:kTextViewTextOffset forWidth:kTextViewMaxWidth withFont:_font lineBreakMode:NSLineBreakByTruncatingTail];
     UIGraphicsPopContext();
 }
 

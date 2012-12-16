@@ -52,3 +52,4 @@
 @end
 
 const CGFloat kTextViewMaxWidth = 250.0f;
+const CGPoint kTextViewTextOffset = {8.0f, 8.0f};

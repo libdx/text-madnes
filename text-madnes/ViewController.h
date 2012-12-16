@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)actionDemo:(id)sender;
+- (IBAction)actionLabelDemo:(id)sender;
+
 @end

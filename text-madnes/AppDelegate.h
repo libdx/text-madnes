@@ -20,3 +20,4 @@
 
 
 extern const CGFloat kTextViewMaxWidth;
+extern const CGPoint kTextViewTextOffset;
