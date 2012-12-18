@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TextDrawingView.h"
 #import "AppDelegate.h"
+#import "SizeViewController.h"
 
 @interface ViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
@@ -46,6 +47,7 @@ static const CGFloat kTextViewMinWidth = 100.0f; // must depend on font
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Width";
     _textView.delegate = self;
     _verificationView.text = _textView.text;
     _verificationView.font = _textView.font;
@@ -53,6 +55,12 @@ static const CGFloat kTextViewMinWidth = 100.0f; // must depend on font
     _label.text = _textView.text;
     _label.font = _textView.font;
     [_label sizeToFit];
+}
+
+- (IBAction)actionPushSizeViewCtrl
+{
+    SizeViewController *vc = [[SizeViewController alloc] initWithNibName:@"SizeViewController" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

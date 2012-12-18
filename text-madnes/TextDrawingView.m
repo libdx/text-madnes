@@ -37,7 +37,13 @@
 - (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
 {
     UIGraphicsPushContext(ctx);
-    [_text drawAtPoint:kTextViewTextOffset forWidth:kTextViewMaxWidth withFont:_font lineBreakMode:NSLineBreakByTruncatingTail];
+    if (_multiline) {
+        CGRect r = CGRectMake(0, 0, self.width, self.height);
+        r = CGRectInset(r, kTextViewTextOffset.x, kTextViewTextOffset.y);
+        [_text drawInRect:r withFont:_font lineBreakMode:NSLineBreakByWordWrapping];
+    }
+    else
+        [_text drawAtPoint:kTextViewTextOffset forWidth:kTextViewMaxWidth withFont:_font lineBreakMode:NSLineBreakByTruncatingTail];        
     UIGraphicsPopContext();
 }
 
@@ -50,6 +56,12 @@
 - (void)setFont:(UIFont *)font
 {
     _font = font;
+    [self.layer setNeedsDisplay];
+}
+
+- (void)setMultiline:(BOOL)multiline
+{
+    _multiline = multiline;
     [self.layer setNeedsDisplay];
 }
 

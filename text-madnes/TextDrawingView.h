@@ -13,4 +13,6 @@
 @property (strong, nonatomic) NSString *text;
 @property (strong, nonatomic) UIFont *font;
 
+@property (nonatomic,getter=isMultiline) BOOL multiline;
+
 @end

@@ -12,5 +12,6 @@
 
 - (IBAction)actionDemo:(id)sender;
 - (IBAction)actionLabelDemo:(id)sender;
+- (IBAction)actionPushSizeViewCtrl;
 
 @end
