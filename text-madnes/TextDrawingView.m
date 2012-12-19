@@ -43,7 +43,7 @@
         [_text drawInRect:r withFont:_font lineBreakMode:NSLineBreakByWordWrapping];
     }
     else
-        [_text drawAtPoint:kTextViewTextOffset forWidth:kTextViewMaxWidth withFont:_font lineBreakMode:NSLineBreakByTruncatingTail];        
+        [_text drawAtPoint:kTextViewTextOffset forWidth:kTextViewMaxWidth withFont:_font lineBreakMode:NSLineBreakByClipping];
     UIGraphicsPopContext();
 }
 

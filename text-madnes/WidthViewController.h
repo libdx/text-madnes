@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WidthViewController : UIViewController
 
 - (IBAction)actionDemo:(id)sender;
 - (IBAction)actionLabelDemo:(id)sender;

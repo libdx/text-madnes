@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 Alexander Ignatenko. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WidthViewController.h"
 #import "TextDrawingView.h"
 #import "AppDelegate.h"
 #import "SizeViewController.h"
 
-@interface ViewController () <UITextViewDelegate>
+@interface WidthViewController () <UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet TextDrawingView *verificationView;
 @property (weak, nonatomic) IBOutlet UILabel *label;
@@ -20,12 +20,12 @@
 static const CGFloat kTextViewMinHeight = 100.0f; // must depend on font
 static const CGFloat kTextViewMinWidth = 100.0f; // must depend on font
 
-@implementation ViewController
+@implementation WidthViewController
 
 - (CGFloat)widthForTextView:(UITextView *)textView
 {
     UIFont *font = [UIFont fontWithName:textView.font.fontName size:textView.font.pointSize];
-    return [textView.text sizeWithFont:font forWidth:kTextViewMaxWidth lineBreakMode:NSLineBreakByTruncatingTail].width + 2*kTextViewTextOffset.x;
+    return [textView.text sizeWithFont:font forWidth:kTextViewMaxWidth lineBreakMode:NSLineBreakByClipping].width + 2*kTextViewTextOffset.x;
 }
 
 - (void)textViewDidChange:(UITextView *)textView

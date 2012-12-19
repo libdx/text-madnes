@@ -16,8 +16,8 @@
 		E1E17E30167CA84E008915E7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E17E2F167CA84E008915E7 /* Default.png */; };
 		E1E17E32167CA84E008915E7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E17E31167CA84E008915E7 /* Default@2x.png */; };
 		E1E17E34167CA84E008915E7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E17E33167CA84E008915E7 /* Default-568h@2x.png */; };
-		E1E17E37167CA84E008915E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E17E36167CA84E008915E7 /* ViewController.m */; };
-		E1E17E3A167CA84E008915E7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E17E38167CA84E008915E7 /* ViewController.xib */; };
+		E1E17E37167CA84E008915E7 /* WidthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E17E36167CA84E008915E7 /* WidthViewController.m */; };
+		E1E17E3A167CA84E008915E7 /* WidthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1E17E38167CA84E008915E7 /* WidthViewController.xib */; };
 		E1E17E43167CC42B008915E7 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E17E42167CC42B008915E7 /* UIView+Geometry.m */; };
 		E1E17E46167CC704008915E7 /* TextDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E17E45167CC704008915E7 /* TextDrawingView.m */; };
 		E1E17E48167CC803008915E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E17E47167CC803008915E7 /* QuartzCore.framework */; };
@@ -39,9 +39,9 @@
 		E1E17E2F167CA84E008915E7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		E1E17E31167CA84E008915E7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E1E17E33167CA84E008915E7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E1E17E35167CA84E008915E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E1E17E36167CA84E008915E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E1E17E39167CA84E008915E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		E1E17E35167CA84E008915E7 /* WidthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WidthViewController.h; sourceTree = "<group>"; };
+		E1E17E36167CA84E008915E7 /* WidthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WidthViewController.m; sourceTree = "<group>"; };
+		E1E17E39167CA84E008915E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WidthViewController.xib; sourceTree = "<group>"; };
 		E1E17E41167CC42A008915E7 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
 		E1E17E42167CC42B008915E7 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
 		E1E17E44167CC704008915E7 /* TextDrawingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextDrawingView.h; sourceTree = "<group>"; };
@@ -102,9 +102,9 @@
 				E1E17E42167CC42B008915E7 /* UIView+Geometry.m */,
 				E1E17E2C167CA84E008915E7 /* AppDelegate.h */,
 				E1E17E2D167CA84E008915E7 /* AppDelegate.m */,
-				E1E17E35167CA84E008915E7 /* ViewController.h */,
-				E1E17E36167CA84E008915E7 /* ViewController.m */,
-				E1E17E38167CA84E008915E7 /* ViewController.xib */,
+				E1E17E35167CA84E008915E7 /* WidthViewController.h */,
+				E1E17E36167CA84E008915E7 /* WidthViewController.m */,
+				E1E17E38167CA84E008915E7 /* WidthViewController.xib */,
 				E1E17E44167CC704008915E7 /* TextDrawingView.h */,
 				E1E17E45167CC704008915E7 /* TextDrawingView.m */,
 				E1E17E24167CA84E008915E7 /* Supporting Files */,
@@ -184,7 +184,7 @@
 				E1E17E30167CA84E008915E7 /* Default.png in Resources */,
 				E1E17E32167CA84E008915E7 /* Default@2x.png in Resources */,
 				E1E17E34167CA84E008915E7 /* Default-568h@2x.png in Resources */,
-				E1E17E3A167CA84E008915E7 /* ViewController.xib in Resources */,
+				E1E17E3A167CA84E008915E7 /* WidthViewController.xib in Resources */,
 				E1E8B7471680CA5300BA6402 /* SizeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +198,7 @@
 			files = (
 				E1E17E2A167CA84E008915E7 /* main.m in Sources */,
 				E1E17E2E167CA84E008915E7 /* AppDelegate.m in Sources */,
-				E1E17E37167CA84E008915E7 /* ViewController.m in Sources */,
+				E1E17E37167CA84E008915E7 /* WidthViewController.m in Sources */,
 				E1E17E43167CC42B008915E7 /* UIView+Geometry.m in Sources */,
 				E1E17E46167CC704008915E7 /* TextDrawingView.m in Sources */,
 				E1E8B7461680CA5300BA6402 /* SizeViewController.m in Sources */,
@@ -216,12 +216,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		E1E17E38167CA84E008915E7 /* ViewController.xib */ = {
+		E1E17E38167CA84E008915E7 /* WidthViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E1E17E39167CA84E008915E7 /* en */,
 			);
-			name = ViewController.xib;
+			name = WidthViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
